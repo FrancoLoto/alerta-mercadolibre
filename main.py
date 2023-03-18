@@ -29,7 +29,7 @@ name = name_tag.getText()
 amount = float(price)
 
 
-my_email = "franco.loto1995@gmail.com"
+my_email = os.environ.get('EMAIL')
 password = os.environ.get('PASSWORD')
 
 connection = smtplib.SMTP("Smtp.gmail.com", port=587)
